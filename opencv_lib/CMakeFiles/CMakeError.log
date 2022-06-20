@@ -1,0 +1,216 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dd5e1/fast && /usr/bin/make -f CMakeFiles/cmTC_dd5e1.dir/build.make CMakeFiles/cmTC_dd5e1.dir/build
+make[1]: Entering directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd5e1.dir/src.c.o
+/usr/bin/cc   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_dd5e1.dir/src.c.o   -c /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_dd5e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd5e1.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_dd5e1.dir/src.c.o  -o cmTC_dd5e1 
+CMakeFiles/cmTC_dd5e1.dir/src.c.o: In function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+src.c:(.text+0x4a): undefined reference to `pthread_detach'
+src.c:(.text+0x5b): undefined reference to `pthread_join'
+src.c:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dd5e1.dir/build.make:86: recipe for target 'cmTC_dd5e1' failed
+make[1]: *** [cmTC_dd5e1] Error 1
+make[1]: Leaving directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_dd5e1/fast' failed
+make: *** [cmTC_dd5e1/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ce328/fast && /usr/bin/make -f CMakeFiles/cmTC_ce328.dir/build.make CMakeFiles/cmTC_ce328.dir/build
+make[1]: Entering directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce328.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ce328.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ce328
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce328.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ce328.dir/CheckFunctionExists.c.o  -o cmTC_ce328 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ce328.dir/build.make:86: recipe for target 'cmTC_ce328' failed
+make[1]: *** [cmTC_ce328] Error 1
+make[1]: Leaving directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_ce328/fast' failed
+make: *** [cmTC_ce328/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ddd71/fast && /usr/bin/make -f CMakeFiles/cmTC_ddd71.dir/build.make CMakeFiles/cmTC_ddd71.dir/build
+make[1]: Entering directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ddd71.dir/src.c.o
+/usr/bin/cc   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ddd71.dir/src.c.o   -c /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ddd71
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddd71.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_ddd71.dir/src.c.o  -o cmTC_ddd71 
+CMakeFiles/cmTC_ddd71.dir/src.c.o: In function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+src.c:(.text+0x4a): undefined reference to `pthread_detach'
+src.c:(.text+0x5b): undefined reference to `pthread_join'
+src.c:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ddd71.dir/build.make:86: recipe for target 'cmTC_ddd71' failed
+make[1]: *** [cmTC_ddd71] Error 1
+make[1]: Leaving directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_ddd71/fast' failed
+make: *** [cmTC_ddd71/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6b0b8/fast && /usr/bin/make -f CMakeFiles/cmTC_6b0b8.dir/build.make CMakeFiles/cmTC_6b0b8.dir/build
+make[1]: Entering directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6b0b8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6b0b8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6b0b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b0b8.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_6b0b8.dir/CheckFunctionExists.c.o  -o cmTC_6b0b8 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6b0b8.dir/build.make:86: recipe for target 'cmTC_6b0b8' failed
+make[1]: *** [cmTC_6b0b8] Error 1
+make[1]: Leaving directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_6b0b8/fast' failed
+make: *** [cmTC_6b0b8/fast] Error 2
+
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bc09f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bc09f.dir/build.make CMakeFiles/cmTC_bc09f.dir/build
+make[1]: Entering directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bc09f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_bc09f.dir/CheckSymbolExists.c.o   -c /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_bc09f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc09f.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     -rdynamic CMakeFiles/cmTC_bc09f.dir/CheckSymbolExists.c.o  -o cmTC_bc09f 
+CMakeFiles/cmTC_bc09f.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bc09f.dir/build.make:97: recipe for target 'cmTC_bc09f' failed
+make[1]: *** [cmTC_bc09f] Error 1
+make[1]: Leaving directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bc09f/fast' failed
+make: *** [cmTC_bc09f/fast] Error 2
+
+File /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1d056/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1d056.dir/build.make CMakeFiles/cmTC_1d056.dir/build
+make[1]: Entering directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d056.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_1d056.dir/CheckSymbolExists.c.o   -c /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1d056
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d056.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     -rdynamic CMakeFiles/cmTC_1d056.dir/CheckSymbolExists.c.o  -o cmTC_1d056 
+CMakeFiles/cmTC_1d056.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1d056.dir/build.make:97: recipe for target 'cmTC_1d056' failed
+make[1]: *** [cmTC_1d056] Error 1
+make[1]: Leaving directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1d056/fast' failed
+make: *** [cmTC_1d056/fast] Error 2
+
+File /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4efa8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4efa8.dir/build.make CMakeFiles/cmTC_4efa8.dir/build
+make[1]: Entering directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4efa8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4efa8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4efa8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4efa8.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_4efa8.dir/CheckFunctionExists.c.o  -o cmTC_4efa8 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4efa8.dir/build.make:97: recipe for target 'cmTC_4efa8' failed
+make[1]: *** [cmTC_4efa8] Error 1
+make[1]: Leaving directory '/home/kouryuu/opencv_lib/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4efa8/fast' failed
+make: *** [cmTC_4efa8/fast] Error 2
+
+

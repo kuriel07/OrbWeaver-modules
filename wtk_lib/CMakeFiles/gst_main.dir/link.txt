@@ -1,0 +1,1 @@
+/usr/bin/c++   -O0 -g -march=native -Wl,--no-as-needed -fPIC -ldl -pthread  -rdynamic CMakeFiles/gst_main.dir/src/gst_main.cpp.o  -o bin/gst_main  -L/usr/local/cuda/lib64 -Wl,-rpath,/usr/local/cuda/lib64 -lssl -lcrypto 

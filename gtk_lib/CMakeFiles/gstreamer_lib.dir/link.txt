@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -O0 -g -march=native -Wl,--no-as-needed -fPIC -ldl -pthread  -shared -Wl,-soname,libgstreamer_lib.so -o lib/libgstreamer_lib.so CMakeFiles/gstreamer_lib.dir/src/gstreamer_lib.cpp.o  -L/usr/local/cuda/lib64 -Wl,-rpath,/usr/local/cuda/lib64:/usr/local/lib -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 /usr/local/lib/liborbweaver.so 

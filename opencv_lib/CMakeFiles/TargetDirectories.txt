@@ -1,0 +1,3 @@
+/home/kouryuu/opencv_lib/CMakeFiles/rebuild_cache.dir
+/home/kouryuu/opencv_lib/CMakeFiles/opencv_lib.dir
+/home/kouryuu/opencv_lib/CMakeFiles/edit_cache.dir

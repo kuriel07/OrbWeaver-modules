@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -O0 -g -march=native -Wl,--no-as-needed -fPIC -ldl -pthread  -shared -Wl,-soname,libgst_test.so -o lib/libgst_test.so CMakeFiles/gst_test.dir/src/gst_test.cpp.o  -L/usr/local/cuda/lib64 -Wl,-rpath,/usr/local/cuda/lib64 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 

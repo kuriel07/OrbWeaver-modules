@@ -1,0 +1,5 @@
+/home/kouryuu/gstreamer_lib/CMakeFiles/rebuild_cache.dir
+/home/kouryuu/gstreamer_lib/CMakeFiles/edit_cache.dir
+/home/kouryuu/gstreamer_lib/CMakeFiles/gst_main.dir
+/home/kouryuu/gstreamer_lib/CMakeFiles/gstreamer_lib.dir
+/home/kouryuu/gstreamer_lib/CMakeFiles/gst_test.dir
